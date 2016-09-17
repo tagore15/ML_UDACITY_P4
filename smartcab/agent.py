@@ -75,6 +75,7 @@ class LearningAgent(Agent):
 
         # TODO: Update state
         state = (inputs['light'], inputs['oncoming'], inputs['left'], inputs['right'], self.next_waypoint)
+        self.state = state
         action = self.choose_action(state)
 
         # Execute action and get reward
